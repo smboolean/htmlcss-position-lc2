@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: red;
+  border: 1px solid #000;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+}
+/* Possiamo utilizzare diversi metodi per selezionare i box all'interno del container */
+.box:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0
+}
+.box:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blue {
+  background-color: blue;
+}
